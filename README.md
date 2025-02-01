@@ -88,11 +88,17 @@ Using a **React CDN (Content Delivery Network)** allows you to quickly include R
 
 ### What is a CDN?
 
-A **CDN (Content Delivery Network)** or **Content Distribution Network** is a geographically distributed network of proxy servers and data centers.
+A **Content Delivery Network (CDN)** is a geographically distributed network of servers designed to deliver web content—such as images, videos, CSS, JavaScript, and HTML—more efficiently to users by reducing latency, improving load times, and enhancing reliability.  
 
 ### Goals of a CDN:
 
 - Provides **high availability** and **performance** by distributing services close to end users.
+
+### **How CDNs Work**:
+- **Caching**: Stores static content (e.g., images, CSS) on edge servers. Dynamic content (e.g., personalized pages) may still require origin server interaction.
+- **Geographic Distribution**: Servers (or Points of Presence, PoPs) are placed globally to serve users from the nearest location.
+- **DNS Routing**: User requests are directed to the optimal edge server via DNS resolution.
+- **Cache Management**: Uses TTL (Time to Live) settings to refresh content. Manual cache invalidation can force updates when origin content changes.
 
 ### Why Use a CDN?
 
